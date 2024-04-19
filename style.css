@@ -195,8 +195,15 @@ background-color: #514e4e;
   z-index: 100;
   margin-top: 0px;
   top: 0;
-  width: 91.8%;
+/*   width: 91.8%; */
+ width: 100%;
+ margin-left: -1px;
 
+}
+@media (min-width: 1240px){
+  .fixed{
+    width: 1240px;
+  }
 }
 
 .nav-list {
