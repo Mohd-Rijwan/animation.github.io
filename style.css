@@ -1158,6 +1158,14 @@ svg {
   /* background-color: #d1d2d4; */
   
 }
+.inner-shadow{
+
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /* border: 5px solid red; */
+  box-shadow: 0 100px 40px -40px rgba(0,0,0,0.99) inset, 0 -100px 40px -40px rgba(0,0,0,0.99) inset;
+}
 .devider{
   height: 100%;
   width: 33.333%;
