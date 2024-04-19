@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playing-With-Animations</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- owl carousel link  -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <!-- font awesome for icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- remix icon for icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+        integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <!-- animatio on scroll link  -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Hero section  -->
+            <section id="hero">
+                <!-- autoplay muted loop   -->
+                <video autoplay muted loop src="vid/Black Hexagon Background Seamless Loop.mp4"></video>
+    
+                <div class="hero-heading">
+                    <div class="hero-wrap">
+                    <p>WELCOME TO MY WORLD</p>
+                    <h1>Hi I'm Rizwan</h1>
+                    <h2>I'm <span class="auto-type"></span></h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis maxime laudantium sunt placeat
+                        doloribus fugiat corporis culpa distinctio, voluptate perspiciatis earum. Fuga sequi cum doloremque
+                        omnis eaque quae delectus culpa?</p>
+                    </div>
+                    <div class="document">
+                        <div><a href="#">Hire Me Now|&#8594</a></div>
+                        <div><a href="#">Download CV</a></div>
+                    </div>
+                </div>
+                <div class="navbar">
+                    <div class="cube-container">
+                        <div class="cube">
+                            <div class="face front"><img src="IMG/js.png" alt=""></div>
+                            <div class="face back"><img src="IMG/gsap.png" alt=""></div>
+                            <div class="face left"><img src="IMG/html.png" alt=""></div>
+                            <div class="face right"><img src="IMG/css.png" alt=""></div>
+                            <div class="face top"><img src="IMG/react.png" alt=""></div>
+                            <div class="face bottom"><img src="IMG/jquery.png" alt=""></div>
+                        </div>
+                    </div>
+                    <ul class="nav-list">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Career</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                    <div class="nav-right">
+                        <p>Topics &#x25BE</p>
+                        <i class="ri-search-line"></i>
+                        <i class="ri-shopping-cart-2-line"></i>
+                        <i class="ri-contacts-book-3-line"></i>
+                    </div>
+                </div>
+                <div class="logo">
+                    <div class="rotation">
+                        <canvas id="circularTextCanvas" width="400" height="400"></canvas>
+                        <div class="img">
+                            <img src="IMG/riz.jpg" alt="riz.jpg">
+                        </div>
+                    </div>
+                </div>
+    
+            </section>
+        <!-- Hero section  -->
+        
+        <!-- About Section  -->
+        <section id="about" class="about">
+            <div class="about-left">
+                <div data-aos="fade-up" data-aos-duration="1000" class="left-sec-top">
+                    <h1 class="about-main-heading">ABOUT US</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eaque error molestias impedit
+                        sapiente reprehenderit numquam cupiditate exercitationem odit vero maxime nesciunt deleniti est
+                        id mollitia quis debitis eius nobis, veritatis, ipsa vel pariatur. Deserunt, magni! Consequatur
+                        quod ea necessitatibus aperiam? Eius similique autem asperiores iusto eos, libero vel non sequi
+                        dolorum Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel architecto illum
+                        consequatur voluptates eaque dolores minima consequuntur. Laboriosam, corporis quibusdam!</p>
+                </div>
+                <div class="left-sec-bottom">
+                    <div data-aos="fade-right" data-aos-duration="1000" class="left-sec-bottom-1">
+                        <h3>WHY CHOOSE US?</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sunt, at iste nostrum ipsa dicta
+                            pariatur tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, esse
+                            fuga? Doloribus, ducimus harum. Natus!</p>
+                    </div>
+                    <div data-aos="fade-left" data-aos-duration="1000" class="left-sec-bottom-2">
+                        <h3>WHY CHOOSE US?</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sunt, at iste nostrum ipsa dicta
+                            pariatur tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, esse
+                            fuga? Doloribus, ducimus harum. Natus!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-right">
+                <div class="about-right-1"></div>
+            </div>
+        </section>
+        <!-- About Section  -->
+
+        <!-- Skill Section start  -->
+        <section id="skill" class="skill">
+            <h1 class="skill-main-heading">My Skills That Matter</h1>
+            <div class="frontend">
+                <h2>Front-End</h2>
+                <div class="skill-card-container">
+                    <div class="skill-card">
+                        <svg height="250" width="250">
+                            <circle r="30" cx="70" cy="68" class="track"></circle>
+                            <circle r="30" cx="70" cy="68" class="progress1" id="pro"></circle>
+                        </svg>
+                        <h4 class="percent" id="percent">95%</h4>
+                        <h3 class="skill-name">HTML</h3>
+
+                    </div>
+                    <div class="skill-card">
+                        <svg height="250" width="250">
+                            <circle r="30" cx="70" cy="68" class="track"></circle>
+                            <circle r="30" cx="70" cy="68" class="progress2" id="pro"></circle>
+                        </svg>
+                        <h4 class="percent">95%</h4>
+                        <h3 class="skill-name">CSS</h3>
+
+                    </div>
+                    <div class="skill-card">
+                        <svg height="250" width="250">
+                            <circle r="30" cx="70" cy="68" class="track"></circle>
+                            <circle r="30" cx="70" cy="68" class="progress3" id="pro"></circle>
+                        </svg>
+                        <h4 class="percent">85%</h4>
+                        <h3 class="skill-name">JavaScript</h3>
+
+                    </div>
+                    <div class="skill-card">
+                        <svg height="250" width="250">
+                            <circle r="30" cx="70" cy="68" class="track"></circle>
+                            <circle r="30" cx="70" cy="68" class="progress4" id="pro"></circle>
+                        </svg>
+                        <h4 class="percent">80%</h4>
+                        <h3 class="skill-name">jquery</h3>
+
+                    </div>
+                </div>
+            </div>
+            <div class="backend">
+                <h2>Back-End</h2>
+                <div class="skill-card-container">
+                    <div class="skill-card">
+                        <svg height="250" width="250">
+                            <circle r="30" cx="70" cy="68" class="track"></circle>
+                            <circle r="30" cx="70" cy="68" class="progress5" id="pro"></circle>
+                        </svg>
+                        <h4 class="percent">60%</h4>
+                        <h3 class="skill-name">php</h3>
+                    </div>
+                    <div class="skill-card">
+                        <svg height="250" width="250">
+                            <circle r="30" cx="70" cy="68" class="track"></circle>
+                            <circle r="30" cx="70" cy="68" class="progress6" id="pro"></circle>
+                        </svg>
+                        <h4 class="percent">85%</h4>
+                        <h3 class="skill-name">MySQL</h3>
+                    </div>
+                    <div class="skill-card">
+                        <svg height="250" width="250">
+                            <circle r="30" cx="70" cy="68" class="track"></circle>
+                            <circle r="30" cx="70" cy="68" class="progress7" id="pro"></circle>
+                        </svg>
+                        <h4 class="percent">80%</h4>
+                        <h3 class="skill-name">DBMS</h3>
+                    </div>
+                    <div class="skill-card">
+                        <svg height="250" width="250">
+                            <circle r="30" cx="70" cy="68" class="track"></circle>
+                            <circle r="30" cx="70" cy="68" class="progress8" id="pro"></circle>
+                        </svg>
+                        <h4 class="percent">60%</h4>
+                        <h3 class="skill-name">SQL</h3>
+                    </div>
+                </div>
+
+            </div>
+            <div class="english">
+                <h2>English-skills</h2>
+                <div class="skill-card-container">
+                    <div class="skill-card">
+                        <svg height="250" width="250">
+                            <circle r="30" cx="70" cy="68" class="track"></circle>
+                            <circle r="30" cx="70" cy="68" class="progress9" id="pro"></circle>
+                        </svg>
+                        <h4 class="percent">99%</h4>
+                        <h3 class="skill-name">Reading</h3>
+                    </div>
+                    <div class="skill-card">
+                        <svg height="250" width="250">
+                            <circle r="30" cx="70" cy="68" class="track"></circle>
+                            <circle r="30" cx="70" cy="68" class="progress10" id="pro"></circle>
+                        </svg>
+                        <h4 class="percent">90%</h4>
+                        <h3 class="skill-name">Writing</h3>
+                    </div>
+                    <div class="skill-card">
+                        <svg height="250" width="250">
+                            <circle r="30" cx="70" cy="68" class="track"></circle>
+                            <circle r="30" cx="70" cy="68" class="progress11" id="pro"></circle>
+                        </svg>
+                        <h4 class="percent">90%</h4>
+                        <h3 class="skill-name">Listening</h3>
+                    </div>
+                    <div class="skill-card">
+                        <svg height="250" width="250">
+                            <circle r="30" cx="70" cy="68" class="track"></circle>
+                            <circle r="30" cx="70" cy="68" class="progress12" id="pro"></circle>
+                        </svg>
+                        <h4 class="percent">70%</h4>
+                        <h3 class="skill-name">Speaking</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Skill Section end  -->
+
+        <!-- My service Section  -->
+        <section id="service" class="service">
+            <div class="serv-head">
+                <span>I have strong command over Front-End</span>
+                <h1>We do awesome service for our clients</h1>
+            </div>
+
+            <div class="service-card-container">
+                <div data-aos="fade-right" data-aos-duration="1000" class="serv-card">
+                    <img src="IMG/gif/s-logo1.gif" alt="">
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <span><a href="#">Read More --></a></span>
+                </div>
+
+                <div data-aos="fade-down" data-aos-duration="1000" class="serv-card">
+                    <img src="IMG/gif/s-logo2.gif" alt="">
+                    <h3>Web Application</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <span><a href="#">Read More --></a></span>
+                </div>
+                <div data-aos="fade-left" data-aos-duration="1000" class="serv-card">
+                    <img src="IMG/gif/s-logo3.gif" alt="">
+                    <h3>Web Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <span><a href="#">Read More --></a></span>
+                </div>
+                <div data-aos="fade-right" data-aos-duration="1000" class="serv-card">
+                    <img src="IMG/gif/s-logo4.gif" alt="">
+                    <h3>Banner Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <span><a href="#">Read More --></a></span>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1000" class="serv-card">
+                    <img src="IMG/gif/s-logo5.gif" alt="">
+                    <h3>Icon Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <span><a href="#">Read More --></a></span>
+                </div>
+                <div data-aos="fade-left" data-aos-duration="1000" class="serv-card">
+                    <img src="IMG/gif/s-logo6.gif" alt="">
+                    <h3>SEO</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <span><a href="#">Read More --></a></span>
+                </div>
+            </div>
+        </section>
+        <!-- My service Section end -->
+
+        <!-- Ongoing Project start  -->
+        <section id="ongoing" class="ongoing">
+            <div class="ongoing-top">
+                <p>ACCOMPLISHMENTS</p>
+                <h1>Ongoing Projects</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita doloremque laborum ipsum fugiat
+                    debitis quis enim reiciendis ipsam ut eius!</p>
+            </div>
+
+            <div class="ongoing-bottom">
+
+
+                <div class="wrapper">
+                    <div class="carousel owl-carousel">
+                        <div class="card card-1">
+                            <h3>Clone</h3>
+                            <p>Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, elit. Magni, maxime?</p>
+                            <img class="codehelp" src="IMG/ongoing/codehelp.gif" alt="">
+                        </div>
+                        <div class="card card-2">
+                            <h3>Clone</h3>
+                            <p>Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, elit. Magni, maxime?</p>
+                            <img class="microsoft" src="IMG/ongoing/microsoft.png" alt="">
+                        </div>
+                        <div class="card card-3">
+                            <h3>Clone</h3>
+                            <p>Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, elit. Magni, maxime?</p>
+                            <img class="apple" src="IMG/ongoing/apple.png" alt="">
+                        </div>
+                        <div class="card card-4">
+                            <h3>Clone</h3>
+                            <p>Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, elit. Magni, maxime?</p>
+                            <img class="amazon" src="IMG/ongoing/amazon.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+        <!-- Ongoing Project end  -->
+
+        <!-- Modern web Section start -->
+        <section id="modern" class="modern">
+            <div class="modern-left">
+                <div data-aos="fade-right" data-aos-duration="1000" class="modern-card">
+                    <img src="IMG/quick/devin.gif" alt="">
+                    <h3>Devin</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                </div>
+                <div data-aos="fade-left" data-aos-duration="1000" class="modern-card">
+                    <img src="IMG/quick/chatgpt.png" alt="">
+                    <h3>ChatGPT</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1000" class="modern-card">
+                    <img src="IMG/quick/bootstrap.png" alt="">
+                    <h3>Bootstrap</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1000" class="modern-card">
+                    <img src="IMG/quick/gsap.png" alt="">
+                    <h3>GSAP</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                </div>
+            </div>
+            <div class="modern-right">
+                <div class="right-top">
+                    <h1>The quickest way to create modern websites</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia illo ea voluptatum dolores
+                        sapiente dolorem quia dolorum doloribus rem excepturi.</p>
+                    <span><a href="#">Explore Us --></a></span>
+                </div>
+                <div class="right-bottom">
+                    <h3>Network</h3>
+                    <i class="ri-facebook-circle-fill" alt="img"></i>
+                    <i class="ri-instagram-fill"></i>
+                    <i class="ri-twitter-fill"></i>
+                    <i class="ri-telegram-fill"></i>
+                </div>
+            </div>
+        </section>
+        <!-- Modern web Section end -->
+
+        <!-- testimonial section start  -->
+        <div id="testimonial" class="testimonial">
+            <div class="testi-left">
+                <div class="testi-carousel">
+                    <div class="devider">
+
+                        <div class="vertical-card-container">
+                            <div class="testi-card">
+                                <div class="testi-top">
+                                    <img src="IMG/riz.jpg" alt="img">
+                                    <div class="testi-card-heading">
+                                        <h4>Mark Zuckerberg</h4>
+                                        <p>CEO of Facebook</p>
+                                    </div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. libero dolor sit amet
+                                    consectetur, adipisicing elit. Voluptatum, a
+                                    quam? Amet iste illum ipsam libero impedit odio ad quia!
+                                </p>
+                            </div>
+                            <div class="testi-card">
+                                <div class="testi-top">
+                                    <img src="IMG/riz.jpg" alt="img">
+                                    <div class="testi-card-heading">
+                                        <h4>Mark Zuckerberg</h4>
+                                        <p>CEO of Facebook</p>
+                                    </div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. libero dolor sit amet
+                                    consectetur, adipisicing elit. Voluptatum, a
+                                    quam? Amet iste illum ipsam libero impedit odio ad quia!
+                                </p>
+                            </div>
+                            <!-- <div class="testi-card">
+                                <img src="IMG/testi/figma.png" alt="js.png">
+                            </div> -->
+                            <!-- <div class="testi-card">
+                                <img src="IMG/testi/html.webp" alt="html">
+                            </div>
+                            <div class="testi-card">
+                                <img src="IMG/testi/ui-ux.png" alt="ui-ux.png">
+                            </div> -->
+                        </div>
+                        <div class="vertical-card-container">
+                            <div class="testi-card">
+                                <div class="testi-top">
+                                    <img src="IMG/riz.jpg" alt="img">
+                                    <div class="testi-card-heading">
+                                        <h4>Mark Zuckerberg</h4>
+                                        <p>CEO of Facebook</p>
+                                    </div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. libero dolor sit amet
+                                    consectetur, adipisicing elit. Voluptatum, a
+                                    quam? Amet iste illum ipsam libero impedit odio ad quia!
+                                </p>
+                            </div>
+                            <div class="testi-card">
+                                <div class="testi-top">
+                                    <img src="IMG/riz.jpg" alt="img">
+                                    <div class="testi-card-heading">
+                                        <h4>Mark Zuckerberg</h4>
+                                        <p>CEO of Facebook</p>
+                                    </div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. libero dolor sit amet
+                                    consectetur, adipisicing elit. Voluptatum, a
+                                    quam? Amet iste illum ipsam libero impedit odio ad quia!
+                                </p>
+                            </div>
+                            <!-- <div class="testi-card">
+                                <img src="IMG/testi/figma.png" alt="js.png">
+                            </div> -->
+                            <!-- <div class="testi-card">
+                                <img src="IMG/testi/html.webp" alt="html">
+                            </div>
+                            <div class="testi-card">
+                                <img src="IMG/testi/ui-ux.png" alt="ui-ux.png">
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="devider">
+
+                        <div class="card-container-middle">
+                            <div class="testi-card">
+                                <div class="testi-top">
+                                    <img src="IMG/riz.jpg" alt="img">
+                                    <div class="testi-card-heading">
+                                        <h4>Mark Zuckerberg</h4>
+                                        <p>CEO of Facebook</p>
+                                    </div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. libero dolor sit amet
+                                    consectetur, adipisicing elit. Voluptatum, a
+                                    quam? Amet iste illum ipsam libero impedit odio ad quia!
+                                </p>
+                            </div>
+                            <div class="testi-card">
+                                <div class="testi-top">
+                                    <img src="IMG/riz.jpg" alt="img">
+                                    <div class="testi-card-heading">
+                                        <h4>Mark Zuckerberg</h4>
+                                        <p>CEO of Facebook</p>
+                                    </div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. libero dolor sit amet
+                                    consectetur, adipisicing elit. Voluptatum, a
+                                    quam? Amet iste illum ipsam libero impedit odio ad quia!
+                                </p>
+                            </div>
+                            <!-- <div class="testi-card">
+                                <img src="IMG/testi/es6.png" alt="es6.png">
+                            </div> -->
+                            <!-- <div class="testi-card">
+                                <img src="IMG/testi/gsap.png" alt="gsap.png">
+                            </div>
+                            <div class="testi-card">
+                                <img src="IMG/testi/jsx.png" alt="jsx.png">
+                            </div> -->
+                        </div>
+                        <div class="card-container-middle">
+                            <div class="testi-card">
+                                <div class="testi-top">
+                                    <img src="IMG/riz.jpg" alt="img">
+                                    <div class="testi-card-heading">
+                                        <h4>Mark Zuckerberg</h4>
+                                        <p>CEO of Facebook</p>
+                                    </div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. libero dolor sit amet
+                                    consectetur, adipisicing elit. Voluptatum, a
+                                    quam? Amet iste illum ipsam libero impedit odio ad quia!
+                                </p>
+                            </div>
+                            <div class="testi-card">
+                                <div class="testi-top">
+                                    <img src="IMG/riz.jpg" alt="img">
+                                    <div class="testi-card-heading">
+                                        <h4>Mark Zuckerberg</h4>
+                                        <p>CEO of Facebook</p>
+                                    </div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. libero dolor sit amet
+                                    consectetur, adipisicing elit. Voluptatum, a
+                                    quam? Amet iste illum ipsam libero impedit odio ad quia!
+                                </p>
+                            </div>
+                            <!-- <div class="testi-card">
+                                <img src="IMG/testi/es6.png" alt="es6.png">
+                            </div> -->
+                            <!-- <div class="testi-card">
+                                <img src="IMG/testi/gsap.png" alt="gsap.png">
+                            </div>
+                            <div class="testi-card">
+                                <img src="IMG/testi/jsx.png" alt="jsx.png">
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="devider">
+
+                        <div class="vertical-card-container">
+                            <div class="testi-card">
+                                <div class="testi-top">
+                                    <img src="IMG/riz.jpg" alt="img">
+                                    <div class="testi-card-heading">
+                                        <h4>Mark Zuckerberg</h4>
+                                        <p>CEO of Facebook</p>
+                                    </div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. libero dolor sit amet
+                                    consectetur, adipisicing elit. Voluptatum, a
+                                    quam? Amet iste illum ipsam libero impedit odio ad quia!
+                                </p>
+
+                            </div>
+                            <div class="testi-card">
+                                <div class="testi-top">
+                                    <img src="IMG/riz.jpg" alt="img">
+                                    <div class="testi-card-heading">
+                                        <h4>Mark Zuckerberg</h4>
+                                        <p>CEO of Facebook</p>
+                                    </div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. libero dolor sit amet
+                                    consectetur, adipisicing elit. Voluptatum, a
+                                    quam? Amet iste illum ipsam libero impedit odio ad quia!
+                                </p>
+                            </div>
+                            <!-- <div class="testi-card">
+                                <img src="IMG/testi/node.png" alt="node.png">
+                            </div> -->
+                            <!-- <div class="testi-card">
+                                <img src="IMG/testi/npm.png" alt="npm.png">
+                            </div>
+                            <div class="testi-card">
+                                <img src="IMG/testi/react.webp" alt="react.webp">
+                            </div> -->
+                        </div>
+                        <div class="vertical-card-container">
+                            <div class="testi-card">
+                                <div class="testi-top">
+                                    <img src="IMG/riz.jpg" alt="img">
+                                    <div class="testi-card-heading">
+                                        <h4>Mark Zuckerberg</h4>
+                                        <p>CEO of Facebook</p>
+                                    </div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. libero dolor sit amet
+                                    consectetur, adipisicing elit. Voluptatum, a
+                                    quam? Amet iste illum ipsam libero impedit odio ad quia!
+                                </p>
+
+                            </div>
+                            <div class="testi-card">
+                                <div class="testi-top">
+                                    <img src="IMG/riz.jpg" alt="img">
+                                    <div class="testi-card-heading">
+                                        <h4>Mark Zuckerberg</h4>
+                                        <p>CEO of Facebook</p>
+                                    </div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. libero dolor sit amet
+                                    consectetur, adipisicing elit. Voluptatum, a
+                                    quam? Amet iste illum ipsam libero impedit odio ad quia!
+                                </p>
+                            </div>
+                            <!-- <div class="testi-card">
+                                <img src="IMG/testi/node.png" alt="node.png">
+                            </div> -->
+                            <!-- <div class="testi-card">
+                                <img src="IMG/testi/npm.png" alt="npm.png">
+                            </div>
+                            <div class="testi-card">
+                                <img src="IMG/testi/react.webp" alt="react.webp">
+                            </div> -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="testi-right">
+                <div class="testi-right-top">
+                    <p>Testimonial</p>
+                    <h3>What client says about?</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, quaerat perspiciatis quam
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, optio? Eos autem harum
+                        libero facilis. Rem optio at earum Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Harum quibusdam deserunt doloribus consequatur suscipit distinctio magni reiciendis iusto amet
+                        facilis.
+                        sint et beatae quod rem iure obcaecati error!</p>
+                </div>
+                <div class="feedback">
+                    <div class="f-microsoft">
+                        <h4><i class="ri-microsoft-line"></i>-Microsoft</h4>
+                        <li>&#9734 &#9734 &#9734 &#9734 &#9734</li>
+                        <span>(319+ reviews)</span>
+                    </div>
+                    <div class="f-google">
+                        <h4><i class="ri-google-fill"></i>-Google</h4>
+                        <li>&#9734 &#9734 &#9734 &#9734 &#9734</li>
+                        <span>(319+ reviews)</span>
+                    </div>
+                    <div class="f-amazon">
+                        <h4><i class="ri-amazon-fill"></i>-amazon</h4>
+                        <li>&#9734 &#9734 &#9734 &#9734 &#9734</li>
+                        <span>(319+ reviews)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- testimonial section end  -->
+
+        <!-- contact section start  -->
+        <div class="contact" id="contact">
+            <h1>Get in touch</h1>
+            <div class="contact-container">
+                <div class="contact-left">
+                    <h2>Let's talk</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores repellat ipsa soluta nemo,
+                        assumenda sequi fugit accusantium vero ea numquam?</p>
+                    <div class="contact-link">
+                        <a href="#"><img src="IMG/contact/icon2.gif" alt=""><span>rizwan1267@gmail.com</span></a> <br>
+                        <a href="#"><img src="IMG/contact/icon3.gif" alt=""><span>+888-876-342</span></a> <br>
+                        <a href="#"><img src="IMG/contact/location.png" alt=""><span>Pune, Maharashtra</span></a> <br>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <label for="name">Your Name</label>
+                        <input type="name" id="name" placeholder="Enter Your Name">
+
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" placeholder="Enter Your Email">
+
+                        <label for="textarea">Write Your Message Here</label>
+                        <textarea name="text" id="" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
+
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- contact section end  -->
+
+        <!-- Footer Section  -->
+        <section id="footer" class="footer">
+            <div class="social-media">
+                <a class="facebook" href="#"><img src="IMG/social/facebook-circle-fill.png" alt=""></a>
+                <a class="twitter" href="#"><img src="IMG/social/twitter-fill.png" alt=""></a>
+                <a class="google" href="#"><img src="IMG/social/google-fill.png" alt=""></a>
+                <a class="youtube" href="#"><img src="IMG/social/youtube-fill.png" alt=""></a>
+                <a class="instagram" href="#"><img src="IMG/social/instagram-fill.png" alt=""></a>
+                <a class="linkedin" href="#"><img src="IMG/social/linkedin-box-fill.png" alt=""></a>
+            </div>
+            <div class="footer1">
+                <div class="col">
+                    <h3>Let's talk</h3>
+                    <p class="para">> HTML</p>
+                    <p class="para">> CSS</p>
+                    <p class="para">> JavaScript</p>
+                    <p class="para">> jquery</p>
+                    <p class="para">> DBMS</p>
+                    <p class="para">> MySQL</p>
+                    <p class="para">> php</p>
+                    <p class="para">> React</p>
+                    <p class="para">> GSAP</p>
+                </div>
+                <div class="col">
+                    <h3>Links</h3>
+                    <p class="para">> Home</p>
+                    <p class="para">> About</p>
+                    <p class="para">> Services</p>
+                    <p class="para">> Skills</p>
+                    <p class="para">> Accomplishment</p>
+                    <p class="para">> Modern Web Designing</p>
+                    <p class="para">> Testimonials</p>
+                    <p class="para">> Career</p>
+                    <p class="para">> Contact</p>
+
+                </div>
+                <!-- <div class="col">
+                    <h3>Developer & IT</h3>
+                    <p class="para">Local</p>
+                    <p class="para">Local</p>
+                    <p class="para">Local</p>
+                    <p class="para">Local</p>
+                    <p class="para">Local</p>
+                    <p class="para">Local</p>
+                    <p class="para">Local</p>
+                    <p class="para">Local</p>
+                    <p class="para">Local</p>
+                </div> -->
+                <div class="col">
+                    <h3>Services</h3>
+                    <p class="para">> UI/UX Designer</p>
+                    <p class="para">> Web Design</p>
+                    <p class="para">> Web Development</p>
+                    <p class="para">> Graphics Design</p>
+                    <p class="para">> Games Building</p>
+                    <p class="para">> Banner Design</p>
+                    <p class="para">> Icon Design</p>
+                    <p class="para">> Data Analyst</p>
+                    <p class="para">> SEO</p>
+                </div>
+                <div class="col">
+                    <h3>Newsletter</h3>
+                    <p class="newletter-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, dolorum nobis. Alias nulla blanditiis omnis repellendus voluptas numquam?</p>
+                    <label for="email"></label>
+                    <input type="text" class="email" placeholder="Your email id here"><br>
+                    <input type="submit" class="btn-sub">
+                </div>
+            </div>
+            <div class="footer2">
+                <div class="footer-left">
+                    <div>
+                        <p>Englis(India)</p>
+                    </div>
+                    <div>
+                        <p>Your Privacy Choice</p>
+                    </div>
+                    <p>Consumer Health Privacy</p>
+                </div>
+                <div class="footer-right">
+                    <p>Contact</p>
+                    <p>Privacy</p>
+                    <p>Terms of use</p>
+                    <p>Trademarks</p>
+                    <p>About our ads</p>
+                    <p>&copy;Rizwan 2024</p>
+                </div>
+            </div>
+        </section>
+        <!-- Footer Section  -->
+
+    </div>
+
+
+ <!-- Local javascript link  -->
+    <script src="script.js"></script>
+
+    <!-- jquery cdn for owl carousel start -->
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <!-- jquery cdn for owl carousel end -->
+
+
+    <!-- type js link start -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+    var typed = new Typed('.auto-type', {
+    strings: ['Web Developer.','Freelancer.','Web Designer.'],
+    typeSpeed: 150,
+    backSpeed: 150,
+    loop:true
+  });
+   </script>
+    <!-- type js link end -->
+
+
+ <!-- animation on scroll start  -->
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script>
+    AOS.init();
+  </script>
+ <!-- animation on scroll end -->
+
+
+    <!-- link for tilt start -->
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".skill-card"), {
+            max: 25,
+            speed: 400
+        });
+    </script>
+    <!-- link for tilt end -->
+
+</body>
+
+</html>
