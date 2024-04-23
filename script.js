@@ -5,6 +5,17 @@ window.addEventListener('scroll', function () {
     let navbar = this.document.querySelector(".navbar")
     navbar.classList.toggle('fixed', this.window.scrollY > 0);
 })
+
+
+// hamburger code 
+const ham_btn = document.getElementById("ham-btn")
+ham_btn.onclick = ()=>{
+    const hamburger1 = document.getElementById("hamburger")
+    hamburger1.classList.toggle("hamburger")
+}
+
+
+
 // navbar end 
 
 
