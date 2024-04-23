@@ -1555,11 +1555,14 @@ flex-direction: column;
   .testi-card .testi-top p{
     margin-top: 0;
   }
+   .testi-card{
+    overflow: hidden;
+  }
   .testi-card p{
-    font-size: 0.5rem;
-    text-align: justify;
+    font-size: 0.35rem;
+    text-align: left;
     line-height: 10px;
-    margin-top: 50px;
+    margin-top: 35px;
   }
   .testi-right{
     height: 50%;
